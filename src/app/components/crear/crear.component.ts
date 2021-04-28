@@ -15,5 +15,4 @@ export class CrearComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
