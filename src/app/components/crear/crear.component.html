@@ -1,0 +1,13 @@
+<ul>
+    <li *ngFor="let item of lista">
+        <label *ngIf="item.estado==3">
+            <span class="terminada">{{item.titulo}}</span>
+        </label>
+        <label *ngIf="item.estado==2">
+            <span class="proceso">{{item.titulo}}</span>
+        </label>
+        <label *ngIf="item.estado==1">
+            <span class="iniciada">{{item.titulo}}</span>
+        </label>
+    </li>
+</ul>

@@ -1,0 +1,21 @@
+<form [formGroup]="formulario">
+    <ul>
+        <li>
+            <label>Titulo</label>
+            <input type="text" formControlName="titulo">
+        </li>
+        <li>
+            <label>Estado</label>
+                <select class="tipo" formControlName="estado">
+                    <option value="1">Iniciada</option>
+                    <option value="2">En proceso</option>
+                    <option value="3">Terminada</option>
+                </select>
+        </li>
+        <li>
+            <button type="button" (click)="Eliminar()">Cancelar</button>
+            <button type="button" (click)="Crear()" [routerLink]="['/crear']" routerLinkActive="router-link-active">Crear</button>
+            
+        </li>
+    </ul>
+</form>
